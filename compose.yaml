@@ -1,0 +1,9 @@
+services:
+  ubuntu:
+    build: .
+    image: amd64/ubuntu:24.04
+    platform: linux/amd64
+    container_name: ubuntu24.04
+    volumes:
+      - ./data:/data
+    tty: true
